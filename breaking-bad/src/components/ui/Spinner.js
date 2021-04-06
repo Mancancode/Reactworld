@@ -3,6 +3,7 @@ import spinner from '../../img/spinner.gif'
 
 const Spinner = () => {
     return (
+        // eslint-disable-next-line
         <img src={spinner }style={{ width:'200px', margin:'auto' , display:'block' , alt:'Loading'}}/>
             
        
