@@ -4,7 +4,7 @@ import './navbar.css'
 import logo from '../../assets/logo.svg';
 
 
-const Menu = () => {
+const Menu = () => (
   <> 
   <p><a href='#home'>Home </a></p>
           <p><a href='#wgpt3'>whats GPT ? </a></p>
@@ -12,7 +12,7 @@ const Menu = () => {
           <p><a href='#features'>Case Studies </a></p>
           <p><a href='#blog'>Library </a></p>
           </>
-}
+)
 const Navbar = () => {
   // Moblie---Menu-----use---state-----
   const [toggleMenu, setToggleMenu]= useState(false)
@@ -21,18 +21,18 @@ const Navbar = () => {
     <div className='gpt3__navbar'>
       <div className='gpt3__navbar-links'>
         <div className="gpt3__navbar-link_logo">
-          <img src='logo' alt='logo'/>
+          <img src={logo} alt='logo'/>
         </div>
         <div className="gpt3__navbar-links_container">
-          <Menu/>
+          <Menu />
         <div>
       </div>
       
     </div>
     </div>
     <div className="gpt3__navbar-sign">
-        <p>Sign In</p>
-        <button type='button'>Sign Up</button>
+    
+       
       </div>
 
       {/* Mobile--- Menu------- starts-----here */}
@@ -56,7 +56,6 @@ const Navbar = () => {
             </div>
           </div>
         )
-
         }
       </div>
     </div>
